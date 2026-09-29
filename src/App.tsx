@@ -295,11 +295,12 @@ export default function App() {
         onProceedToCheckout={handleProceedToCheckout}
       />
 
-      {/* Checkout Modal & Order Tracking Confirmation */}
+      {/* WhatsApp Checkout Modal */}
       <CheckoutModal
         isOpen={isCheckoutOpen}
         onClose={() => setIsCheckoutOpen(false)}
         items={cartItems}
+        restaurantInfo={restaurantInfo}
         onOrderSuccess={handleOrderSuccess}
       />
 

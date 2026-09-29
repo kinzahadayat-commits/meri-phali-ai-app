@@ -283,6 +283,21 @@ export const EditDataModal: React.FC<EditDataModalProps> = ({
                 </div>
 
                 <div>
+                  <label className="block text-xs font-bold text-emerald-800 uppercase mb-1">
+                    WhatsApp Number (Receives All Orders)
+                  </label>
+                  <input
+                    type="text"
+                    value={infoDraft.whatsapp}
+                    onChange={(e) => setInfoDraft({ ...infoDraft, whatsapp: e.target.value })}
+                    placeholder="e.g. 0308-6410064 or 923086410064"
+                    className="w-full px-3 py-2 text-sm bg-emerald-50/50 border border-emerald-300 rounded-xl focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-600/20 font-bold text-emerald-950"
+                  />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
                   <label className="block text-xs font-bold text-zinc-700 uppercase mb-1">
                     Order Hotline
                   </label>
@@ -293,9 +308,7 @@ export const EditDataModal: React.FC<EditDataModalProps> = ({
                     className="w-full px-3 py-2 text-sm bg-zinc-50 border border-zinc-300 rounded-xl focus:bg-white focus:outline-none focus:ring-2 focus:ring-red-600/20"
                   />
                 </div>
-              </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-xs font-bold text-zinc-700 uppercase mb-1">
                     Email
@@ -307,18 +320,18 @@ export const EditDataModal: React.FC<EditDataModalProps> = ({
                     className="w-full px-3 py-2 text-sm bg-zinc-50 border border-zinc-300 rounded-xl focus:bg-white focus:outline-none focus:ring-2 focus:ring-red-600/20"
                   />
                 </div>
+              </div>
 
-                <div>
-                  <label className="block text-xs font-bold text-zinc-700 uppercase mb-1">
-                    Opening Hours
-                  </label>
-                  <input
-                    type="text"
-                    value={infoDraft.openingHours}
-                    onChange={(e) => setInfoDraft({ ...infoDraft, openingHours: e.target.value })}
-                    className="w-full px-3 py-2 text-sm bg-zinc-50 border border-zinc-300 rounded-xl focus:bg-white focus:outline-none focus:ring-2 focus:ring-red-600/20"
-                  />
-                </div>
+              <div>
+                <label className="block text-xs font-bold text-zinc-700 uppercase mb-1">
+                  Opening Hours
+                </label>
+                <input
+                  type="text"
+                  value={infoDraft.openingHours}
+                  onChange={(e) => setInfoDraft({ ...infoDraft, openingHours: e.target.value })}
+                  className="w-full px-3 py-2 text-sm bg-zinc-50 border border-zinc-300 rounded-xl focus:bg-white focus:outline-none focus:ring-2 focus:ring-red-600/20"
+                />
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">

@@ -6,7 +6,7 @@ import {
   Minus,
   Trash2,
   ArrowRight,
-  Info,
+  MessageCircle,
 } from 'lucide-react';
 import { CartItem } from '../types/restaurant';
 import { RESTAURANT_INFO } from '../data/restaurantData';
@@ -175,18 +175,19 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
               </div>
 
               {/* Notice */}
-              <div className="flex items-center gap-1.5 text-[11px] text-zinc-500 bg-white p-2 rounded-lg border border-zinc-200">
-                <Info className="w-3.5 h-3.5 text-amber-500 shrink-0" />
-                <span>Prototype ordering system. Cash on delivery or pickup.</span>
+              <div className="flex items-center gap-2 text-xs text-emerald-900 bg-emerald-50 p-2.5 rounded-xl border border-emerald-200">
+                <MessageCircle className="w-4 h-4 text-emerald-600 shrink-0" />
+                <span>Orders are sent directly to Al Baik Cafe on WhatsApp.</span>
               </div>
 
               {/* Checkout CTA */}
               <button
                 type="button"
                 onClick={onProceedToCheckout}
-                className="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3.5 px-4 rounded-xl shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 active:scale-95"
+                className="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold py-3.5 px-4 rounded-xl shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 active:scale-95 text-sm uppercase tracking-wider"
               >
-                <span>Proceed to Checkout</span>
+                <MessageCircle className="w-4 h-4" />
+                <span>Order on WhatsApp</span>
                 <ArrowRight className="w-4 h-4" />
               </button>
             </div>

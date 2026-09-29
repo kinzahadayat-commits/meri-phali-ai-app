@@ -1,0 +1,6 @@
+{
+  "name": "Al Baik Cafe - Modern Fast Food & Cafe Restaurant",
+  "description": "Official website for Al Baik Cafe featuring crispy fried chicken, burgers, sandwiches, sides, refreshing drinks, special deals, and online ordering.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
